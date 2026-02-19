@@ -3,7 +3,7 @@ class Calculadora:
         self.fecha = fecha
         self.tipo_operacion = ""
         self.resultado = ""
-        self.texto_tabla = ""   # Mantiene tu arquitectura original
+        self.texto_tabla = ""  
 
     def get_fecha(self):
         return self.fecha
@@ -32,7 +32,6 @@ class Calculadora:
         return self.resultado
 
     def guardar_info(self, obj_usuario):
-        # Se agrega una línea fiel al estilo original del estudiante
         self.texto_tabla += (
             f"{obj_usuario.get_cedula():<12} "
             f"{obj_usuario.get_nombre():<25} "
@@ -42,7 +41,7 @@ class Calculadora:
         )
 
     def mostrar_tabla(self):
-        print("===== TABLA DE OPERACIONES =====")
+        print("----- TABLA DE OPERACIONES -----")
         print(f"{'Cedula':<12} {'Nombre Usuario':<25} {'Numero1':<8} {'Numero2':<8} {'Tipo de Operacion':<18} {'Resultado':<10} {'Fecha'}")
         print("-" * 100)
         print(self.texto_tabla)
@@ -60,3 +59,4 @@ class Calculadora:
 
     def mostrar_info(self):
         return f"Fecha: {self.fecha}, Tipo de operación: {self.tipo_operacion}, Resultado: {self.resultado}"
+
