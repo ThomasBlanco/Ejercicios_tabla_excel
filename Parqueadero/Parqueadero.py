@@ -30,8 +30,6 @@ class RegistroParqueadero:
 
     def get_estado(self):
         return self.estado
-
-    # SETTERS
     
     def set_puesto(self, puesto):
         self.puesto = puesto
@@ -53,4 +51,5 @@ class RegistroParqueadero:
             self.hora_entrada,
             self.hora_salida if self.hora_salida else "",
             self.estado
+
         ]
