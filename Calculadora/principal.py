@@ -4,7 +4,6 @@ from modelo_numero import Numero
 
 calc = Calculadora("2026-02-17")
 
-# Datos fieles a la tabla original
 datos = [
     ("1020345678", "Juan Garcia Lopez", 10, 23, "suma"),
     ("1020345678", "Juan Garcia Lopez", 69, 45, "resta"),
@@ -29,5 +28,6 @@ for cedula, nombre, n1, n2, oper in datos:
     resultado = calc.hacer_operacion(num1, num2, oper)
     calc.guardar_info(usuario, n1, n2)
 
-# Mostrar tabla final
+# mostramos la tabla
 calc.mostrar_tabla()
+
